@@ -17,10 +17,10 @@ class Train:
         self.data_path = os.path.join(os.getcwd(), 'classifier/data/')
         self.model_path = os.path.join(os.getcwd(), 'classifier/models/')
         self.dataset_name = 'paultimothymooney/chest-xray-pneumonia'
-        self.model: Sequential
-        self.val: ImageDataGenerator
-        self.train: ImageDataGenerator
-        self.test: ImageDataGenerator
+        self.model = Sequential
+        self.val = ImageDataGenerator
+        self.train = ImageDataGenerator
+        self.test = ImageDataGenerator
         self.epochs = 5
 
     def load_data(self):
